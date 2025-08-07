@@ -1,17 +1,334 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
-        {% block stylesheets %}
-        {% endblock %}
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			{% block title %}Welcome!
+			{% endblock %}
+		</title>
+		<!-- Font Awesome -->
+		<link
+		rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
 
-        {% block javascripts %}
-            {% block importmap %}{{ importmap('app') }}{% endblock %}
-        {% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-    </body>
-</html>
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+		<link rel="canonical" href="https://www.assurance-pour-taxi.fr"/>
+		<meta name="author" content="Aksam Assurance">
+		<title>Devis assurance pour Taxi en ligne</title>
+		<meta name="description" content="Devis assurance taxi en ligne et en quelques clics. Quel que soit le type de véhicule et les antécédents d'assurances, obtenez un devis assurance taxi en ligne.">
+		<link rel="icon" type="image/png" href="assets/img/favicon.png"> {% block stylesheets %}{% endblock %}
+		<!-- Google tag (gtag.js) -->
+		<script type="text/plain" data-cookieconsent="statistics" async src="https://www.googletagmanager.com/gtag/js?id=G-FHV4ZB0VKV"></script>
+		<script type="text/plain" data-cookieconsent="statistics">
+			window.dataLayer = window.dataLayer || [];
+																					        function gtag() { dataLayer.push(arguments); }
+																					        gtag('js', new Date());
+																					        gtag('config', 'G-FHV4ZB0VKV');
+		</script>
+
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: "#1E3A8A",
+secondary: "#38BDF8",
+accent: "#F59E0B",
+success: "#10B981",
+warning: "#FB923C",
+danger: "#EF4444",
+dark: "#0F172A",
+light: "#F8FAFC",
+surface: "#FFFFFF",
+surfaceHover: "#F1F5F9"
+},
+fontFamily: {
+sans: ["Plus Jakarta Sans", "sans-serif"]
+},
+backgroundImage: {
+"gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+scanlines: "repeating-linear-gradient(to bottom, #455283, #5F607A, #C09452 2px)"
+}
+}
+}
+};
+		</script>
+
+
+		<!-- Google Tag Manager (noscript) -->
+		<noscript>
+			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W69S4T83" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+		</noscript>
+
+		<!-- Google Tag Manager -->
+		<script>
+			(function (w, d, s, l, i) {
+w[l] = w[l] || [];
+w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+var f = d.getElementsByTagName(s)[0],
+j = d.createElement(s),
+dl = l != 'dataLayer' ? '&l=' + l : '';
+j.async = true;
+j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-W69S4T83');
+		</script>
+
+		<!-- Script de gestion du consentement -->
+		<script>
+			window.dataLayer = window.dataLayer || [];
+function gtag() {
+dataLayer.push(arguments);
+}
+gtag('consent', 'default', {
+'ad_storage': 'denied',
+'analytics_storage': 'denied',
+'ad_user_data': 'denied',
+'ad_personalization': 'denied',
+'wait_for_update': 500
+});
+
+function getCookie(cname) {
+var name = cname + "=";
+var decodedCookie = decodeURIComponent(document.cookie);
+var ca = decodedCookie.split(';');
+for (var i = 0; i < ca.length; i++) {
+var c = ca[i];
+while (c.charAt(0) == ' ') {
+c = c.substring(1);
+}
+if (c.indexOf(name) == 0) {
+return c.substring(name.length, c.length);
+}
+}
+return "";
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+if (document.cookie.indexOf('displayCookieConsent=y') >= 0) {
+gtag('consent', 'update', {
+'ad_storage': 'granted',
+'analytics_storage': 'granted',
+'ad_user_data': 'granted',
+'ad_personalization': 'granted'
+});
+}
+});
+		</script>
+
+		<!-- Google Ads -->
+		<script type="text/plain" data-cookieconsent="marketing" async src="https://www.googletagmanager.com/gtag/js?id=AW-716366483"></script>
+		<script type="text/plain" data-cookieconsent="marketing">
+			window.dataLayer = window.dataLayer || [];
+																					        function gtag(){dataLayer.push(arguments);}
+																					        gtag('js', new Date());
+																					        gtag('config', 'AW-716366483');
+		</script>
+
+		<!-- Cookies -->
+		<script>
+			gaProperty = 'G-FHV4ZB0VKV'
+var disableStr = 'ga-disable-' + gaProperty;
+if (document.cookie.indexOf('displayCookieConsent=y') < 0) {
+window[disableStr] = true;
+}
+		</script>
+
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800 &display=swap');
+
+			.gradient-primary {
+				background: linear-gradient(135deg, #1E3A8A 0%, #38BDF8 100%);
+			}
+
+			.gradient-secondary {
+				background: linear-gradient(135deg, #38BDF8 0%, #F59E0B 100%);
+			}
+
+			.gradient-accent {
+				background: linear-gradient(135deg, #F59E0B 0%, #FB923C 100%);
+			}
+
+			.glass-effect {
+				background: rgba(255, 255, 255, 0.1);
+				backdrop-filter: blur(20px);
+				border: 1px solid rgba(255, 255, 255, 0.2);
+			}
+
+			.floating-animation {
+				animation: float 6s ease-in-out infinite;
+			}
+
+			@keyframes float {
+
+				0,
+				100% {
+					transform: translateY(0px);
+				}
+
+				50% {
+					transform: translateY(-20px);
+				}
+			}
+
+			.slide-in-left {
+				animation: slideInLeft 1s ease-out;
+			}
+
+			.slide-in-right {
+				animation: slideInRight 1s ease-out;
+			}
+
+			@keyframes slideInLeft {
+				0% {
+					transform: translateX(-100px);
+					opacity: 0;
+				}
+
+				100% {
+					transform: translateX(0);
+					opacity: 1;
+				}
+			}
+
+			@keyframes slideInRight {
+				0% {
+					transform: translateX(100px);
+					opacity: 0;
+				}
+
+				100% {
+					transform: translateX(0);
+					opacity: 1;
+				}
+			}
+
+			.fade-in {
+				animation: fadeIn 1s ease-in;
+			}
+
+			@keyframes fadeIn {
+				0% {
+					opacity: 0;
+					transform: translateY(30px);
+				}
+
+				100% {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+
+			.form-input {
+				transition: all 0.3s ease;
+				border: 2px solid #e2e8f0;
+			}
+
+			.form-input:focus {
+				border-color: #facc15;
+				box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.1);
+				transform: translateY(-2px);
+			}
+
+			.form-input:focus+.form-label,
+			.form-input:not(:placeholder-shown)+.form-label {
+				transform: translateY(-28px) scale(0.8);
+				color: #facc15;
+			}
+
+			.form-label {
+				transition: all 0.3s ease;
+				pointer-events: none;
+			}
+
+			.btn-modern {
+				transition: all 0.3s ease;
+				transform: translateY(0);
+			}
+
+			.btn-modern:hover {
+				transform: translateY(-3px);
+				box-shadow: 0 10px 25px rgba(251, 191, 36, 0.3);
+			}
+
+			.card-hover {
+				transition: all 0.3s ease;
+			}
+
+			.card-hover:hover {
+				transform: translateY(-5px);
+				box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+			}
+
+			.icon-bounce {
+				animation: bounce 2s infinite;
+			}
+
+			@keyframes bounce {
+
+				0,
+				20%,
+				50%,
+				80%,
+				100% {
+					transform: translateY(0);
+				}
+
+				40% {
+					transform: translateY(-10px);
+				}
+
+				60% {
+					transform: translateY(-5px);
+				}
+			}
+
+			.pulse-animation {
+				animation: pulse 2s infinite;
+			}
+
+			@keyframes pulse {
+				0% {
+					box-shadow: 0 0 0 0 rgba(251, 191, 36, 0.4);
+				}
+
+				70% {
+					box-shadow: 0 0 0 10px rgba(251, 191, 36, 0);
+				}
+
+				100% {
+					box-shadow: 0 0 0 0 rgba(251, 191, 36, 0);
+				}
+			}
+
+			.text-gradient {
+				background: linear-gradient(135deg, #facc15 0%, #eab308 100%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+			}
+
+			.scanlines-bg {
+				background-image: repeating-linear-gradient(to bottom, rgba(69, 82, 131, 0.03), rgba(95, 96, 122, 0.03), rgba(192, 148, 82, 0.03) 2px);
+			}
+
+			.hero-pattern {
+				background-image: radial-gradient(circle at 25% 25%, rgba(30, 58, 138, 0.1) 0%, transparent 50%), radial-gradient(circle at 75% 75%, rgba(56, 189, 248, 0.1) 0%, transparent 50%), radial-gradient(circle at 25% 75%, rgba(245, 158, 11, 0.1) 0%, transparent 50%);
+			}
+
+			.mesh-gradient {
+				background: radial-gradient(at 40% 20%, #1E3A8A 0px, transparent 50%), radial-gradient(at 80% 0%, #38BDF8 0px, transparent 50%), radial-gradient(at 0% 50%, #F59E0B 0px, transparent 50%), radial-gradient(at 80% 50%, #10B981 0px, transparent 50%), radial-gradient(at 0% 100%, #EF4444 0px, transparent 50%), radial-gradient(at 80% 100%, #FB923C 0px, transparent 50%);
+			}
+		</style>
+
+		{% block javascripts %}
+			{% block importmap %}
+				{{ importmap('app') }}
+			{% endblock %}
+		{% endblock %}
+	</head>
+	<body class="bg-light font-sans"> {% block body %}{% endblock %}
+		</body>
+	</html>
