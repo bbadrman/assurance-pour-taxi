@@ -22,9 +22,9 @@
 		<script type="text/plain" data-cookieconsent="statistics" async src="https://www.googletagmanager.com/gtag/js?id=G-FHV4ZB0VKV"></script>
 		<script type="text/plain" data-cookieconsent="statistics">
 			window.dataLayer = window.dataLayer || [];
-																					        function gtag() { dataLayer.push(arguments); }
-																					        gtag('js', new Date());
-																					        gtag('config', 'G-FHV4ZB0VKV');
+																											        function gtag() { dataLayer.push(arguments); }
+																											        gtag('js', new Date());
+																											        gtag('config', 'G-FHV4ZB0VKV');
 		</script>
 
 		<script src="https://cdn.tailwindcss.com"></script>
@@ -122,9 +122,9 @@ gtag('consent', 'update', {
 		<script type="text/plain" data-cookieconsent="marketing" async src="https://www.googletagmanager.com/gtag/js?id=AW-716366483"></script>
 		<script type="text/plain" data-cookieconsent="marketing">
 			window.dataLayer = window.dataLayer || [];
-																					        function gtag(){dataLayer.push(arguments);}
-																					        gtag('js', new Date());
-																					        gtag('config', 'AW-716366483');
+																											        function gtag(){dataLayer.push(arguments);}
+																											        gtag('js', new Date());
+																											        gtag('config', 'AW-716366483');
 		</script>
 
 		<!-- Cookies -->
@@ -329,6 +329,20 @@ window[disableStr] = true;
 			{% endblock %}
 		{% endblock %}
 	</head>
-	<body class="bg-light font-sans"> {% block body %}{% endblock %}
-		</body>
-	</html>
+	<body class="bg-light font-sans">
+		{% block header %}
+			{% include "header.html.twig" %}
+		{% endblock %}
+
+		{% block body %}{% endblock %}
+
+		<!-- Footer -->
+		{% block footer %}
+			<footer>
+				{% include "footer.html.twig" %}
+			</footer>
+		{% endblock %}
+
+
+	</body>
+</html>

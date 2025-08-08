@@ -43,6 +43,13 @@ class Taxi
     #[ORM\Column(length: 50, nullable: true)]
     private ?string $ancienne = null;
 
+    #[ORM\Column(nullable: true)]
+    private ?\DateTimeImmutable $created_at = null;
+
+    public function __construct()
+    {
+        $this->created_at = new \DateTimeImmutable();
+    }
     public function getId(): ?int
     {
         return $this->id;
@@ -164,6 +171,18 @@ class Taxi
     public function setAncienne(?string $ancienne): static
     {
         $this->ancienne = $ancienne;
+
+        return $this;
+    }
+
+    public function getCreatedAt(): ?\DateTimeImmutable
+    {
+        return $this->created_at;
+    }
+
+    public function setCreatedAt(?\DateTimeImmutable $created_at): static
+    {
+        $this->created_at = $created_at;
 
         return $this;
     }

@@ -35,14 +35,7 @@ class TaxiType extends AbstractType
                     'placeholder' => 'Raison sociale',
                 ]
             ])
-            ->add('marque', Type\TextType::class, [
-                'label' => 'marque ',
-                'required' => true,
-                'disabled' => false,
-                'attr' => [
-                    'placeholder' => 'Raison sociale',
-                ]
-            ])
+
             ->add('activite', Type\ChoiceType::class, [
                 'label' => 'activite',
                 'required' => false,

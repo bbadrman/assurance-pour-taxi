@@ -10,40 +10,6 @@
 		</div>
 	{% endfor %}
 
-	<!-- Header -->
-	<header class="bg-gradient-to-r from-yellow-400 to-yellow-500 text-dark py-4 sticky top-0 z-50 shadow-2xl border-b-2 border-yellow-600">
-		<div class="container mx-auto px-2">
-			<div class="flex flex-col lg:flex-row items-center justify-between space-y-4 lg:space-y-0">
-				<div class="flex items-center space-x-4 slide-in-left">
-					<div class="w-12 h-12 bg-dark/20 rounded-xl flex items-center justify-center shadow-lg">
-						<i class="fas fa-taxi text-2xl text-dark"></i>
-					</div>
-					<div>
-						<div class="hidden lg:block">
-							<h1 class="text-lg font-semibold text-dark">Quelque soient vos antécédents obtenez un devis
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								                                d'assurance pour Taxi en quelques clics</h1>
-						</div>
-						<div class="lg:hidden">
-							<h1 class="text-sm font-semibold text-dark">Devis assurance Taxi</h1>
-							<p class="text-xs text-dark/80">En quelques clics</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="flex items-center space-x-4 slide-in-right">
-					<div class="p-4 bg-dark/20 rounded-2xl icon-bounce shadow-lg">
-						<i class="fas fa-phone text-2xl text-dark"></i>
-					</div>
-					<div>
-						<span class="text-sm text-dark/80 block">Conseil personnalisé</span>
-						<a href="tel:0182834800" class="text-2xl font-bold text-dark hover:text-gradient transition-colors duration-300">01
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	                            82
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	                            83 48 00</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
 
 	<!-- Hero Section -->
 	<section
@@ -57,10 +23,10 @@
 			<i class="fas fa-taxi text-yellow-700 text-8xl opacity-25"></i>
 		</div>
 		{# circel annulation
-																						<div class="absolute inset-0 scanlines-bg opacity-30"></div>
-																						<div class="absolute top-10 left-10 w-32 h-32 bg-yellow-600 rounded-full opacity-30 floating-animation"></div>
-																						<div class="absolute bottom-10 right-10 w-48 h-48 bg-yellow-700 rounded-full opacity-25 floating-animation" style="animation-delay: -2s;"></div>
-																						 #}
+																																								<div class="absolute inset-0 scanlines-bg opacity-30"></div>
+																																								<div class="absolute top-10 left-10 w-32 h-32 bg-yellow-600 rounded-full opacity-30 floating-animation"></div>
+																																								<div class="absolute bottom-10 right-10 w-48 h-48 bg-yellow-700 rounded-full opacity-25 floating-animation" style="animation-delay: -2s;"></div>
+																																								 #}
 		<div class="container mx-auto px-4 relative z-10">
 			<div
 				class="grid lg:grid-cols-2 gap-16 items-center">
@@ -74,10 +40,10 @@
 								src="{{ asset('../images/assurance-taxi.png') }}" alt="Assurance Taxi" class="w-full h-full object-cover"/>
 
 							{# <div class="text-center text-dark">
-																																																			<i class="fas fa-taxi text-9xl lg:text-[8rem] mb-6 floating-animation"></i>
-																																																			<h3 class="text-3xl lg:text-4xl font-bold mb-2">Assurance Taxi</h3>
-																																																			<p class="text-xl lg:text-2xl opacity-90">Protection complète</p>
-																																																		</div> #}
+																																																																																																																		<i class="fas fa-taxi text-9xl lg:text-[8rem] mb-6 floating-animation"></i>
+																																																																																																																		<h3 class="text-3xl lg:text-4xl font-bold mb-2">Assurance Taxi</h3>
+																																																																																																																		<p class="text-xl lg:text-2xl opacity-90">Protection complète</p>
+																																																																																																																	</div> #}
 							</div>
 						</div>
 						<div class="lg:hidden mt-6">
@@ -121,20 +87,6 @@
 								</div>
 							</div>
 
-							<!-- Marque -->
-							<div class="form-group">
-								<div class="input-group flex">
-									<span class="inline-flex items-center px-3 py-3 bg-gray-50 border border-r-0 border-gray-200 rounded-l-xl text-gray-600">
-										<i class="fas fa-car text-yellow-500"></i>
-									</span>
-									{{ form_widget(form.marque, {
-											'attr': {
-												'class': 'flex-1 px-4 py-4 border border-gray-200 rounded-r-xl bg-light focus:bg-surface transition-all duration-300 form-input',
-												'placeholder': 'Marque du véhicule'
-											}
-										}) }}
-								</div>
-							</div>
 
 							<!-- Activité -->
 							<div class="form-group">
@@ -259,7 +211,7 @@
 
 								<!-- Checkbox de consentement -->
 								<div class="flex items-start space-x-3 p-6 bg-gradient-to-r from-yellow-50 to-yellow-100 rounded-2xl border border-yellow-200">
-									<input type="checkbox" value="" class="mt-1 w-5 h-5 text-yellow-500 rounded focus:ring-2 focus:ring-yellow-400 border-2 border-yellow-300" required>
+									<input type="checkbox" value="" class="mt-1 w-5 h-5 text-yellow-500 rounded focus:ring-2 focus:ring-yellow-400 border-2 border-yellow-300" checked  >
 									<span class="text-sm text-gray-600 leading-relaxed">
 										En cliquant sur "comparer", vous acceptez de transmettre vos informations à
 										AKSAM ASSURANCES, qui accepte de les utiliser conformément à sa politique de
@@ -271,437 +223,212 @@
 								<!-- Bouton de soumission -->
 								<button type="submit" class="btn-modern w-full bg-gradient-to-r from-yellow-400 to-yellow-500 text-dark font-bold py-4 px-8 rounded-xl text-lg pulse-animation shadow-lg hover:shadow-2xl transition-all duration-300">
 									<i class="fas fa-calculator mr-3"></i>
-									Comparer maintenant
+									{{ button_label|default('Comparer maintenant') }}
 								</button>
 
 							</div>
-						{{ form_end(form) }}
+							{{ form_end(form) }}
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Content Section -->
+		<section class="py-20 bg-surface">
+			<div class="container mx-auto px-4">
+				<div class="max-w-6xl mx-auto">
+					<div class="fade-in">
+						<div class="text-center mb-16">
+							<h2 class="text-5xl font-bold text-gradient mb-6">Assurance Taxi – Devis rapide et sans
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                            engagement</h2>
+							<div class="w-24 h-1 bg-gradient-to-r from-yellow-400 to-yellow-500 mx-auto rounded-full"></div>
+						</div>
+
+						<div class="bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 rounded-3xl p-10 mb-16 border border-primary/10">
+							<div class="flex items-start space-x-4">
+								<div class="p-4 bg-primary/10 rounded-2xl">
+									<i class="fas fa-info-circle text-3xl text-gradient"></i>
+								</div>
+								<div>
+									<h3 class="text-2xl font-bold text-dark mb-4">Préambule</h3>
+									<p class="text-gray-700 text-lg leading-relaxed mb-6">
+										L'activité de chauffeur taxi est réglementée en France selon le code des transports,
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                    plus
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                    précisément l'article L3120-4 qui stipule que toute personne réalisant des
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                    transports de
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                    personnes rémunérés avec un véhicule de moins de 10 places doit souscrire une
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                    assurance
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                    taxi.
+									</p>
+									<div class="inline-block bg-gradient-to-r from-yellow-400 to-yellow-500 text-dark px-6 py-3 rounded-2xl font-semibold shadow-lg">
+										<i class="fas fa-arrow-right mr-2"></i>
+										On dénombre 2 cas de figure pour l'assurance taxi
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-				</section>
 
-
-				<!-- Content Section -->
-				<section class="py-20 bg-surface">
-					<div class="container mx-auto px-4">
-						<div class="max-w-6xl mx-auto">
-							<div class="fade-in">
-								<div class="text-center mb-16">
-									<h2 class="text-5xl font-bold text-gradient mb-6">Assurance Taxi – Devis rapide et sans
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	                            engagement</h2>
-									<div class="w-24 h-1 bg-gradient-to-r from-yellow-400 to-yellow-500 mx-auto rounded-full"></div>
-								</div>
-
-								<div class="bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 rounded-3xl p-10 mb-16 border border-primary/10">
-									<div class="flex items-start space-x-4">
-										<div class="p-4 bg-primary/10 rounded-2xl">
-											<i class="fas fa-info-circle text-3xl text-gradient"></i>
-										</div>
-										<div>
-											<h3 class="text-2xl font-bold text-dark mb-4">Préambule</h3>
-											<p class="text-gray-700 text-lg leading-relaxed mb-6">
-												L'activité de chauffeur taxi est réglementée en France selon le code des transports,
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															                                    plus
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															                                    précisément l'article L3120-4 qui stipule que toute personne réalisant des
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															                                    transports de
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															                                    personnes rémunérés avec un véhicule de moins de 10 places doit souscrire une
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															                                    assurance
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															                                    taxi.
-											</p>
-											<div class="inline-block bg-gradient-to-r from-yellow-400 to-yellow-500 text-dark px-6 py-3 rounded-2xl font-semibold shadow-lg">
-												<i class="fas fa-arrow-right mr-2"></i>
-												On dénombre 2 cas de figure pour l'assurance taxi
-											</div>
-										</div>
+						<!-- Feature Cards -->
+						<div class="grid md:grid-cols-2 gap-8 mb-20">
+							<div class="bg-surface rounded-3xl p-8 shadow-xl border border-gray-100 card-hover">
+								<div class="flex items-start space-x-6">
+									<div class="p-4 bg-gradient-to-br from-yellow-400 to-yellow-400/80 rounded-2xl shadow-lg">
+										<i class="fas fa-building text-white text-2xl"></i>
 									</div>
-								</div>
-
-								<!-- Feature Cards -->
-								<div class="grid md:grid-cols-2 gap-8 mb-20">
-									<div class="bg-surface rounded-3xl p-8 shadow-xl border border-gray-100 card-hover">
-										<div class="flex items-start space-x-6">
-											<div class="p-4 bg-gradient-to-br from-yellow-400 to-yellow-400/80 rounded-2xl shadow-lg">
-												<i class="fas fa-building text-white text-2xl"></i>
-											</div>
-											<div class="flex-1">
-												<h3 class="text-2xl font-bold text-gradient mb-4">Vous êtes chauffeur de taxi?</h3>
-												<ul class="space-y-4">
-													<li class="flex items-start space-x-4">
-														<div class="p-1 bg-yellow-400  rounded-full mt-1">
-															<i class="fas fa-check text-success text-sm"></i>
-														</div>
-														<span class="text-gray-700">Résilié ou malussé.</span>
-
-													</li>
-													<li class="flex items-start space-x-4">
-														<div class="p-1 bg-yellow-400  rounded-full mt-1">
-															<i class="fas fa-check text-success text-sm"></i>
-														</div>
-														<span class="text-gray-700">Sinistres récents.</span>
-													</li>
-													<li class="flex items-start space-x-4">
-														<div class="p-1 bg-yellow-400  rounded-full mt-1">
-															<i class="fas fa-check text-success text-sm"></i>
-														</div>
-														<span class="text-gray-700">Nouveau chauffeur ou reprise d'activité.</span>
-													</li>
-													<li class="flex items-start space-x-4">
-														<div class="p-1 bg-yellow-400  rounded-full mt-1">
-															<i class="fas fa-check text-success text-sm"></i>
-														</div>
-														<span class="text-gray-700">Permis suspendu ou antécédents
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				                                                d'assurance.</span>
-													</li>
-												</ul>
-												<a href="#contactForm" class="inline-block bg-yellow text-yellow-400 font-bold py-4 px-10 rounded-2xl hover:bg-primary transition-all transform hover:scale-105 shadow-2xl">
-													<i class="fas fa-arrow-up mr-2"></i>
-													Obtenir mon devis maintenant
-												</a>
-											</div>
-
-										</div>
-									</div>
-
-									<div class="bg-surface rounded-3xl p-8 shadow-xl border border-gray-100 card-hover">
-										<div class="flex items-start space-x-6">
-											<div class="p-4 bg-gradient-to-br from-gradient to-gradient/80 rounded-2xl shadow-lg">
-												<i class="fas fa-user text-gradient text-2xl"></i>
-											</div>
-											<div class="flex-1">
-												<h3 class="text-2xl font-bold text-gradient mb-4">Obtenez votre devis en 2 minutes
-												</h3>
-												<ul class="space-y-4">
-
-													<li class="flex items-start space-x-4">
-														<div class="p-1 bg-yellow-400  rounded-full mt-1">
-															<i class="fas fa-check text-success text-sm"></i>
-														</div>
-														<span class="text-gray-700">
-															Formulaire simple et rapide.</span>
-
-													</li>
-													<li class="flex items-start space-x-4">
-														<div class="p-1 bg-yellow-400  rounded-full mt-1">
-															<i class="fas fa-check text-success text-sm"></i>
-														</div>
-														<span class="text-gray-700">Devis personnalisés sans en gagement.</span>
-													</li>
-													<li class="flex items-start space-x-4">
-														<div class="p-1 bg-yellow-400  rounded-full mt-1">
-															<i class="fas fa-check text-success text-sm"></i>
-														</div>
-														<span class="text-gray-700">Assureurs spécialisés dans l'activité
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				                                                taxi.</span>
-													</li>
-													<li class="flex items-start space-x-4">
-														<div class="p-1 bg-yellow-400  rounded-full mt-1">
-															<i class="fas fa-check text-success text-sm"></i>
-														</div>
-														<span class="text-gray-700">Conseillers disponibles à tout moment.</span>
-													</li>
-												</ul>
-												<a href="#contactForm" class="inline-block bg-yellow text-yellow-400 font-bold py-4 px-10 rounded-2xl hover:bg-primary transition-all transform hover:scale-105 shadow-2xl">
-													<i class="fas fa-arrow-up mr-2"></i>
-													Obtenir mon devis maintenant
-												</a>
-											</div>
-										</div>
-									</div>
-
-									<div class="bg-surface rounded-3xl p-8 shadow-xl border border-gray-100 card-hover">
-										<div class="flex items-start space-x-6">
-											<div class="p-4 bg-gradient-to-br from-yellow-400 to-yellow-400/80 rounded-2xl shadow-lg">
-												<i class="fas fa-user text-white text-2xl"></i>
-											</div>
-											<div class="flex-1">
-												<h3 class="text-2xl font-bold text-gradient mb-4">Garanties incluses</h3>
-												<ul class="space-y-4">
-
-													<li class="flex items-start space-x-4">
-														<div class="p-1 bg-yellow-400  rounded-full mt-1">
-															<i class="fas fa-check text-success text-sm"></i>
-														</div>
-														<span class="text-gray-700">
-															RC professionneeloie obligatoire.</span>
-
-													</li>
-													<li class="flex items-start space-x-4">
-														<div class="p-1 bg-yellow-400  rounded-full mt-1">
-															<i class="fas fa-check text-success text-sm"></i>
-														</div>
-														<span class="text-gray-700">Dommages tous accidents.</span>
-													</li>
-													<li class="flex items-start space-x-4">
-														<div class="p-1 bg-yellow-400  rounded-full mt-1">
-															<i class="fas fa-check text-success text-sm"></i>
-														</div>
-														<span class="text-gray-700">Équipements taxi couverts (lumineux, CB,
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				                                                taximétre).</span>
-													</li>
-													<li class="flex items-start space-x-4">
-														<div class="p-1 bg-yellow-400  rounded-full mt-1">
-															<i class="fas fa-check text-success text-sm"></i>
-														</div>
-														<span class="text-gray-700">Indemnisation perte d'exploitation.</span>
-													</li>
-													<li class="flex items-start space-x-4">
-														<div class="p-1 bg-yellow-400  rounded-full mt-1">
-															<i class="fas fa-check text-success text-sm"></i>
-														</div>
-														<span class="text-gray-700">Assistance 24/7 + véhicule de
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				                                                remplacement.</span>
-													</li>
-												</ul>
-												<a href="#contactForm" class="inline-block bg-yellow text-yellow-400 font-bold py-4 px-10 rounded-2xl hover:bg-primary transition-all transform hover:scale-105 shadow-2xl">
-													<i class="fas fa-arrow-up mr-2"></i>
-													Obtenir mon devis maintenant
-												</a>
-											</div>
-										</div>
-									</div>
-
-									<div class="bg-surface rounded-3xl p-8 shadow-xl border border-gray-100 card-hover">
-										<div class="flex items-start space-x-6">
-											<div class="p-4 bg-gradient-to-br from-yellow-400 to-yellow-400/80 rounded-2xl shadow-lg">
-												<i class="fas fa-user text-white text-2xl"></i>
-											</div>
-
-											<div class="flex-1">
-												<h3 class="text-2xl font-bold text-gradient mb-4">Pourquoi choisir notre service?
-												</h3>
-												<p class="text-gray-600 leading-relaxed">
-													Aucune démarchè n'est engagée sans votre accord. Vous gardez le controle à
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						                                        chaque étape.
-												</p>
-												<br><br><br><br><br><br><br><br>
-												<a href="#contactForm" class="inline-block bg-yellow text-yellow-400 font-bold py-4 px-10 rounded-2xl hover:bg-primary transition-all transform hover:scale-105 shadow-2xl">
-													<i class="fas fa-arrow-up mr-2"></i>
-													Obtenir mon devis maintenant
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="grid md:grid-cols-2 gap-8 mb-20">
-									<div class="bg-surface rounded-3xl p-8 shadow-xl border border-gray-100 card-hover">
-										<div class="flex items-start space-x-6">
-											<div class="p-4 bg-gradient-to-br from-gradient to-gradient/80 rounded-2xl shadow-lg">
-												<i class="fas fa-building text-gradient text-2xl"></i>
-											</div>
-											<div class="flex-1">
-												<h3 class="text-2xl font-bold text-gradient mb-4">Assurance société taxi</h3>
-												<p class="text-gray-600 leading-relaxed">
-													Dans ce cas de figure il s'agit exclusivement d'une personne morale disposant de
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						                                        licences d'exercices d'activité de taxi en embauchant des salariés ou en louant
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						                                        des licences à des professionnels. Donc c'est l'entreprise de taxi qui va devoir
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						                                        assurer ses véhicules à titre professionnel en souscrivant des assurances auto
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						                                        pour taxi.
-												</p>
-											</div>
-										</div>
-									</div>
-
-									<div class="bg-surface rounded-3xl p-8 shadow-xl border border-gray-100 card-hover">
-										<div class="flex items-start space-x-6">
-											<div class="p-4 bg-gradient-to-br from-yellow-400 to-yellow-400/80 rounded-2xl shadow-lg">
-												<i class="fas fa-user text-white text-2xl"></i>
-											</div>
-
-											<div class="flex-1">
-												<h3 class="text-2xl font-bold text-gradient mb-4">Assurance taxi indépendant</h3>
-												<p class="text-gray-600 leading-relaxed">
-													Personne physique exerçant une activité libérale de chauffeur de taxi, puisqu'il
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						                                        dispose d'une licence à son nom, dans ce cas de figure c'est le chauffeur
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						                                        indépendant qui a l'obligation de souscrire une assurance auto professionnelle
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						                                        pour usage taxi.
-												</p>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<!-- Obligations Section -->
-								<div class="bg-gradient-to-br from-light to-surfaceHover rounded-3xl p-10 mb-16 border border-gray-100 relative overflow-hidden">
-									<div class="absolute top-0 right-0 w-40 h-40 bg-accent/5 rounded-full -mr-20 -mt-20"></div>
-									<div class="relative">
-										<div class="text-center mb-10">
-											<h2 class="text-4xl font-bold text-gradient mb-6">Obligation d'assurances pour les Taxi
-											</h2>
-											<p class="text-gray-700 text-lg max-w-4xl mx-auto">
-												Pour ce qui est de l'obligation d'assurance, au-delà de l'assurance automobile
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															                                    obligatoire
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															                                    pour tout véhicule à moteur, on dénombre 2 garanties d'assurances obligatoires pour
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															                                    les
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															                                    taxis :
-											</p>
-										</div>
-
-										<div class="grid md:grid-cols-2 gap-8">
-											<div class="bg-surface rounded-2xl p-8 shadow-lg border border-primary/10">
-												<div class="flex items-center space-x-4 mb-6">
-													<span class="bg-primary text-gradient rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold shadow-lg">1</span>
-													<h3 class="text-xl font-bold text-gradient">Assurance auto taxi</h3>
+									<div class="flex-1">
+										<h3 class="text-2xl font-bold text-gradient mb-4">Vous êtes chauffeur de taxi?</h3>
+										<ul class="space-y-4">
+											<li class="flex items-start space-x-4">
+												<div class="p-1 bg-yellow-400  rounded-full mt-1">
+													<i class="fas fa-check text-success text-sm"></i>
 												</div>
-												<p class="text-gray-600 leading-relaxed">
-													Assurance auto professionnelle pour l'exercice d'activités de chauffeur taxi, le
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						                                        souscripteur est le chauffeur de taxi ou la société de taxi. Elle couvre tout
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						                                        dommage matériel et corporel survenu lors de l'exercice de l'activité.
-												</p>
-											</div>
+												<span class="text-gray-700">Résilié ou malussé.</span>
 
-											<div class="bg-surface rounded-2xl p-8 shadow-lg border border-secondary/10">
-												<div class="flex items-center space-x-4 mb-6">
-													<span class="bg-secondary text-gradient rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold shadow-lg">2</span>
-													<h3 class="text-xl font-bold text-gradient">Assurance RC PRO taxi</h3>
+											</li>
+											<li class="flex items-start space-x-4">
+												<div class="p-1 bg-yellow-400  rounded-full mt-1">
+													<i class="fas fa-check text-success text-sm"></i>
 												</div>
-												<p class="text-gray-600 leading-relaxed">
-													Inclut de faite dans l'assurance du véhicule à usage professionnel pour
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						                                        l'activité
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						                                        de chauffeur taxi, elle garantit tout dommage occasionner aux clients,
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						                                        prestataire
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						                                        et concurrents dans l'exercice de l'activité de chauffeur taxi.
-												</p>
-											</div>
-										</div>
+												<span class="text-gray-700">Sinistres récents.</span>
+											</li>
+											<li class="flex items-start space-x-4">
+												<div class="p-1 bg-yellow-400  rounded-full mt-1">
+													<i class="fas fa-check text-success text-sm"></i>
+												</div>
+												<span class="text-gray-700">Nouveau chauffeur ou reprise d'activité.</span>
+											</li>
+											<li class="flex items-start space-x-4">
+												<div class="p-1 bg-yellow-400  rounded-full mt-1">
+													<i class="fas fa-check text-success text-sm"></i>
+												</div>
+												<span class="text-gray-700">Permis suspendu ou antécédents
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                                d'assurance.</span>
+											</li>
+										</ul>
+										<a href="#contactForm" class="inline-block bg-yellow text-yellow-400 font-bold py-4 px-10 rounded-2xl hover:bg-primary transition-all transform hover:scale-105 shadow-2xl">
+											<i class="fas fa-arrow-up mr-2"></i>
+											Obtenir mon devis maintenant
+										</a>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="bg-surface rounded-3xl p-8 shadow-xl border border-gray-100 card-hover">
+								<div class="flex items-start space-x-6">
+									<div class="p-4 bg-gradient-to-br from-gradient to-gradient/80 rounded-2xl shadow-lg">
+										<i class="fas fa-user text-gradient text-2xl"></i>
+									</div>
+									<div class="flex-1">
+										<h3 class="text-2xl font-bold text-gradient mb-4">Obtenez votre devis en 2 minutes
+										</h3>
+										<ul class="space-y-4">
+
+											<li class="flex items-start space-x-4">
+												<div class="p-1 bg-yellow-400  rounded-full mt-1">
+													<i class="fas fa-check text-success text-sm"></i>
+												</div>
+												<span class="text-gray-700">
+													Formulaire simple et rapide.</span>
+
+											</li>
+											<li class="flex items-start space-x-4">
+												<div class="p-1 bg-yellow-400  rounded-full mt-1">
+													<i class="fas fa-check text-success text-sm"></i>
+												</div>
+												<span class="text-gray-700">Devis personnalisés sans en gagement.</span>
+											</li>
+											<li class="flex items-start space-x-4">
+												<div class="p-1 bg-yellow-400  rounded-full mt-1">
+													<i class="fas fa-check text-success text-sm"></i>
+												</div>
+												<span class="text-gray-700">Assureurs spécialisés dans l'activité
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                                taxi.</span>
+											</li>
+											<li class="flex items-start space-x-4">
+												<div class="p-1 bg-yellow-400  rounded-full mt-1">
+													<i class="fas fa-check text-success text-sm"></i>
+												</div>
+												<span class="text-gray-700">Conseillers disponibles à tout moment.</span>
+											</li>
+										</ul>
+										<a href="#contactForm" class="inline-block bg-yellow text-yellow-400 font-bold py-4 px-10 rounded-2xl hover:bg-primary transition-all transform hover:scale-105 shadow-2xl">
+											<i class="fas fa-arrow-up mr-2"></i>
+											Obtenir mon devis maintenant
+										</a>
 									</div>
 								</div>
+							</div>
 
-								<!-- Justificatifs Section -->
-								<div class="bg-gradient-to-r from-accent/10 to-warning/10 rounded-3xl p-8 mb-16 border border-accent/20">
-									<div class="flex items-start space-x-4">
-										<div class="p-3 bg-accent/20 rounded-2xl">
-											<i class="fas fa-file-alt text-2xl text-accent"></i>
-										</div>
-										<div>
-											<h2 class="text-2xl font-bold text-dark mb-4">Assurance auto pour taxi justificatifs
-											</h2>
-											<p class="text-gray-700 leading-relaxed">
-												Les justificatifs délivrés par l'assurance après la souscription d'une assurance
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															                                    auto pour
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															                                    taxi sont identiques que ceux délivrés pour l'assurance automobile particulière sauf
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															                                    qu'il
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															                                    devra être indiqué sur l'attestation d'assurance la mention assurance auto pour
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															                                    usage taxi
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															                                    (transport de personnes à titre onéreux).
-											</p>
-										</div>
+							<div class="bg-surface rounded-3xl p-8 shadow-xl border border-gray-100 card-hover">
+								<div class="flex items-start space-x-6">
+									<div class="p-4 bg-gradient-to-br from-yellow-400 to-yellow-400/80 rounded-2xl shadow-lg">
+										<i class="fas fa-user text-white text-2xl"></i>
+									</div>
+									<div class="flex-1">
+										<h3 class="text-2xl font-bold text-gradient mb-4">Garanties incluses</h3>
+										<ul class="space-y-4">
+
+											<li class="flex items-start space-x-4">
+												<div class="p-1 bg-yellow-400  rounded-full mt-1">
+													<i class="fas fa-check text-success text-sm"></i>
+												</div>
+												<span class="text-gray-700">
+													RC professionneeloie obligatoire.</span>
+
+											</li>
+											<li class="flex items-start space-x-4">
+												<div class="p-1 bg-yellow-400  rounded-full mt-1">
+													<i class="fas fa-check text-success text-sm"></i>
+												</div>
+												<span class="text-gray-700">Dommages tous accidents.</span>
+											</li>
+											<li class="flex items-start space-x-4">
+												<div class="p-1 bg-yellow-400  rounded-full mt-1">
+													<i class="fas fa-check text-success text-sm"></i>
+												</div>
+												<span class="text-gray-700">Équipements taxi couverts (lumineux, CB,
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                                taximétre).</span>
+											</li>
+											<li class="flex items-start space-x-4">
+												<div class="p-1 bg-yellow-400  rounded-full mt-1">
+													<i class="fas fa-check text-success text-sm"></i>
+												</div>
+												<span class="text-gray-700">Indemnisation perte d'exploitation.</span>
+											</li>
+											<li class="flex items-start space-x-4">
+												<div class="p-1 bg-yellow-400  rounded-full mt-1">
+													<i class="fas fa-check text-success text-sm"></i>
+												</div>
+												<span class="text-gray-700">Assistance 24/7 + véhicule de
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                                remplacement.</span>
+											</li>
+										</ul>
+										<a href="#contactForm" class="inline-block bg-yellow text-yellow-400 font-bold py-4 px-10 rounded-2xl hover:bg-primary transition-all transform hover:scale-105 shadow-2xl">
+											<i class="fas fa-arrow-up mr-2"></i>
+											Obtenir mon devis maintenant
+										</a>
 									</div>
 								</div>
+							</div>
 
-								<!-- Garanties Section -->
-								<div class="mb-16">
-									<div class="text-center mb-12">
-										<h2 class="text-4xl font-bold text-gradient mb-4">Exemples garanties et couverture</h2>
-										<p class="text-xl text-gray-600">pour les assurances taxi</p>
-										<div class="w-24 h-1 bg-gradient-to-r from-yellow-400 to-yellow-500 mx-auto rounded-full mt-4"></div>
+							<div class="bg-surface rounded-3xl p-8 shadow-xl border border-gray-100 card-hover">
+								<div class="flex items-start space-x-6">
+									<div class="p-4 bg-gradient-to-br from-yellow-400 to-yellow-400/80 rounded-2xl shadow-lg">
+										<i class="fas fa-user text-white text-2xl"></i>
 									</div>
 
-									<div class="grid lg:grid-cols-2 gap-10">
-										<div class="bg-surface rounded-3xl p-8 shadow-xl border border-primary/10">
-											<div class="mb-8">
-												<div class="flex items-center space-x-4 mb-4">
-													<div class="p-3 bg-primary/10 rounded-2xl">
-														<i class="fas fa-car text-2xl text-gradient"></i>
-													</div>
-													<h3 class="text-2xl font-bold text-gradient">Assurance auto taxi</h3>
-												</div>
-											</div>
-											<ul class="space-y-4">
-												<li class="flex items-start space-x-4">
-													<div class="p-1 bg-yellow-400  rounded-full mt-1">
-														<i class="fas fa-check text-success text-sm"></i>
-													</div>
-													<span class="text-gray-700">Bris de glace responsable ou non responsable.</span>
-												</li>
-												<li class="flex items-start space-x-4">
-													<div class="p-1 bg-yellow-400  rounded-full mt-1">
-														<i class="fas fa-check text-success text-sm"></i>
-													</div>
-													<span class="text-gray-700">Vol et incendie responsable ou non
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													                                            responsable.</span>
-												</li>
-												<li class="flex items-start space-x-4">
-													<div class="p-1 bg-yellow-400  rounded-full mt-1">
-														<i class="fas fa-check text-success text-sm"></i>
-													</div>
-													<span class="text-gray-700">Dommage tout accident responsable ou non
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													                                            responsable.</span>
-												</li>
-												<li class="flex items-start space-x-4">
-													<div class="p-1 bg-yellow-400  rounded-full mt-1">
-														<i class="fas fa-check text-success text-sm"></i>
-													</div>
-													<span class="text-gray-700">Assistance, dépannage ou remorquage selon la
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													                                            franchise souscrite.</span>
-												</li>
-											</ul>
-										</div>
-
-										<div class="bg-surface rounded-3xl p-8 shadow-xl border border-secondary/10">
-											<div class="mb-8">
-												<div class="flex items-center space-x-4 mb-4">
-													<div class="p-3 bg-secondary/10 rounded-2xl">
-														<i class="fas fa-shield-alt text-2xl text-gradient"></i>
-													</div>
-													<h3 class="text-2xl font-bold text-gradient">RC PRO taxi</h3>
-												</div>
-											</div>
-											<ul class="space-y-4">
-												<li class="flex items-start space-x-4">
-													<div class="p-1 bg-yellow-400  rounded-full mt-1">
-														<i class="fas fa-check text-success text-sm"></i>
-													</div>
-													<span class="text-gray-700">Extérieur du véhicule utilisé pour l'exercice de
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													                                            l'activité par exemple au cas où la valise d'un client est détériorée à
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													                                            l'occasion de son déchargement.</span>
-												</li>
-												<li class="flex items-start space-x-4">
-													<div class="p-1 bg-yellow-400  rounded-full mt-1">
-														<i class="fas fa-check text-success text-sm"></i>
-													</div>
-													<span class="text-gray-700">Une perte d'exploitation en cas d'immobilisation du
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													                                            véhicule donc une incapacité à exercer son activité.</span>
-												</li>
-												<li class="flex items-start space-x-4">
-													<div class="p-1 bg-yellow-400  rounded-full mt-1">
-														<i class="fas fa-check text-success text-sm"></i>
-													</div>
-													<span class="text-gray-700">La réparation du préjudice matériel dans un contexte
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													                                            pénal, à savoir en cas de vol ou d'agression, et on peut alors envisager le
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													                                            remboursement de la recette soustraite.</span>
-												</li>
-												<li class="flex items-start space-x-4">
-													<div class="p-1 bg-yellow-400  rounded-full mt-1">
-														<i class="fas fa-check text-success text-sm"></i>
-													</div>
-													<span class="text-gray-700">Le remboursement d'un stage de récupération de
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													                                            points.</span>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-
-								<!-- CTA Section -->
-								<div class="bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-3xl p-12 text-dark text-center relative overflow-hidden">
-									<div class="absolute inset-0 bg-scanlines opacity-10"></div>
-									<div class="relative">
-										<div class="w-16 h-16 bg-dark/20 rounded-2xl mx-auto mb-6 flex items-center justify-center">
-											<i class="fas fa-calculator text-3xl text-dark"></i>
-										</div>
-										<h2 class="text-4xl font-bold mb-6 text-dark">Devis assurances taxi</h2>
-										<p class="text-xl mb-8 text-dark/90 max-w-3xl mx-auto leading-relaxed">
-											Pour obtenir un devis d'assurance taxi, il vous suffit de compléter le formulaire en
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								                                haut de
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								                                page, c'est simple et rapide. Cela vous permettra d'effectuer en ligne un comparatif de
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								                                différentes compagnies d'assurance proposant des garanties sur mesure pour les
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								                                chauffeurs
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								                                taxi.
+									<div class="flex-1">
+										<h3 class="text-2xl font-bold text-gradient mb-4">Pourquoi choisir notre service?
+										</h3>
+										<p class="text-gray-600 leading-relaxed">
+											Aucune démarchè n'est engagée sans votre accord. Vous gardez le controle à
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                        chaque étape.
 										</p>
-										<a href="#contactForm" class="inline-block bg-dark text-yellow-400 font-bold py-4 px-10 rounded-2xl hover:bg-primary transition-all transform hover:scale-105 shadow-2xl">
+										<br><br><br><br><br><br><br><br>
+										<a href="#contactForm" class="inline-block bg-yellow text-yellow-400 font-bold py-4 px-10 rounded-2xl hover:bg-primary transition-all transform hover:scale-105 shadow-2xl">
 											<i class="fas fa-arrow-up mr-2"></i>
 											Obtenir mon devis maintenant
 										</a>
@@ -709,57 +436,239 @@
 								</div>
 							</div>
 						</div>
-					</div>
-				</section>
 
-				<!-- Footer -->
+						<div class="grid md:grid-cols-2 gap-8 mb-20">
+							<div class="bg-surface rounded-3xl p-8 shadow-xl border border-gray-100 card-hover">
+								<div class="flex items-start space-x-6">
+									<div class="p-4 bg-gradient-to-br from-gradient to-gradient/80 rounded-2xl shadow-lg">
+										<i class="fas fa-building text-gradient text-2xl"></i>
+									</div>
+									<div class="flex-1">
+										<h3 class="text-2xl font-bold text-gradient mb-4">Assurance société taxi</h3>
+										<p class="text-gray-600 leading-relaxed">
+											Dans ce cas de figure il s'agit exclusivement d'une personne morale disposant de
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                        licences d'exercices d'activité de taxi en embauchant des salariés ou en louant
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                        des licences à des professionnels. Donc c'est l'entreprise de taxi qui va devoir
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                        assurer ses véhicules à titre professionnel en souscrivant des assurances auto
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                        pour taxi.
+										</p>
+									</div>
+								</div>
+							</div>
 
-				<footer class="bg-gradient-to-r from-yellow-400 to-yellow-500 text-dark mt-16">
-					<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-						<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-							<div>
+							<div class="bg-surface rounded-3xl p-8 shadow-xl border border-gray-100 card-hover">
+								<div class="flex items-start space-x-6">
+									<div class="p-4 bg-gradient-to-br from-yellow-400 to-yellow-400/80 rounded-2xl shadow-lg">
+										<i class="fas fa-user text-white text-2xl"></i>
+									</div>
 
-								<h3 class="text-xl font-bold mb-4">
-									<i class="fas fa-university mr-2 text-"></i>Aksam Assurance</h3>
-								<p class="text-dark-400 ">
-									Entreprise soumise au contrôle de l'ACPR
+									<div class="flex-1">
+										<h3 class="text-2xl font-bold text-gradient mb-4">Assurance taxi indépendant</h3>
+										<p class="text-gray-600 leading-relaxed">
+											Personne physique exerçant une activité libérale de chauffeur de taxi, puisqu'il
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                        dispose d'une licence à son nom, dans ce cas de figure c'est le chauffeur
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                        indépendant qui a l'obligation de souscrire une assurance auto professionnelle
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                        pour usage taxi.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Obligations Section -->
+						<div class="bg-gradient-to-br from-light to-surfaceHover rounded-3xl p-10 mb-16 border border-gray-100 relative overflow-hidden">
+							<div class="absolute top-0 right-0 w-40 h-40 bg-accent/5 rounded-full -mr-20 -mt-20"></div>
+							<div class="relative">
+								<div class="text-center mb-10">
+									<h2 class="text-4xl font-bold text-gradient mb-6">Obligation d'assurances pour les Taxi
+									</h2>
+									<p class="text-gray-700 text-lg max-w-4xl mx-auto">
+										Pour ce qui est de l'obligation d'assurance, au-delà de l'assurance automobile
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                    obligatoire
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                    pour tout véhicule à moteur, on dénombre 2 garanties d'assurances obligatoires pour
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                    les
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                    taxis :
+									</p>
+								</div>
+
+								<div class="grid md:grid-cols-2 gap-8">
+									<div class="bg-surface rounded-2xl p-8 shadow-lg border border-primary/10">
+										<div class="flex items-center space-x-4 mb-6">
+											<span class="bg-primary text-gradient rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold shadow-lg">1</span>
+											<h3 class="text-xl font-bold text-gradient">Assurance auto taxi</h3>
+										</div>
+										<p class="text-gray-600 leading-relaxed">
+											Assurance auto professionnelle pour l'exercice d'activités de chauffeur taxi, le
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                        souscripteur est le chauffeur de taxi ou la société de taxi. Elle couvre tout
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                        dommage matériel et corporel survenu lors de l'exercice de l'activité.
+										</p>
+									</div>
+
+									<div class="bg-surface rounded-2xl p-8 shadow-lg border border-secondary/10">
+										<div class="flex items-center space-x-4 mb-6">
+											<span class="bg-secondary text-gradient rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold shadow-lg">2</span>
+											<h3 class="text-xl font-bold text-gradient">Assurance RC PRO taxi</h3>
+										</div>
+										<p class="text-gray-600 leading-relaxed">
+											Inclut de faite dans l'assurance du véhicule à usage professionnel pour
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                        l'activité
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                        de chauffeur taxi, elle garantit tout dommage occasionner aux clients,
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                        prestataire
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                        et concurrents dans l'exercice de l'activité de chauffeur taxi.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Justificatifs Section -->
+						<div class="bg-gradient-to-r from-accent/10 to-warning/10 rounded-3xl p-8 mb-16 border border-accent/20">
+							<div class="flex items-start space-x-4">
+								<div class="p-3 bg-accent/20 rounded-2xl">
+									<i class="fas fa-file-alt text-2xl text-accent"></i>
+								</div>
+								<div>
+									<h2 class="text-2xl font-bold text-dark mb-4">Assurance auto pour taxi justificatifs
+									</h2>
+									<p class="text-gray-700 leading-relaxed">
+										Les justificatifs délivrés par l'assurance après la souscription d'une assurance
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                    auto pour
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                    taxi sont identiques que ceux délivrés pour l'assurance automobile particulière sauf
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                    qu'il
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                    devra être indiqué sur l'attestation d'assurance la mention assurance auto pour
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                    usage taxi
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                    (transport de personnes à titre onéreux).
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- Garanties Section -->
+						<div class="mb-16">
+							<div class="text-center mb-12">
+								<h2 class="text-4xl font-bold text-gradient mb-4">Exemples garanties et couverture</h2>
+								<p class="text-xl text-gray-600">pour les assurances taxi</p>
+								<div class="w-24 h-1 bg-gradient-to-r from-yellow-400 to-yellow-500 mx-auto rounded-full mt-4"></div>
+							</div>
+
+							<div class="grid lg:grid-cols-2 gap-10">
+								<div class="bg-surface rounded-3xl p-8 shadow-xl border border-primary/10">
+									<div class="mb-8">
+										<div class="flex items-center space-x-4 mb-4">
+											<div class="p-3 bg-primary/10 rounded-2xl">
+												<i class="fas fa-car text-2xl text-gradient"></i>
+											</div>
+											<h3 class="text-2xl font-bold text-gradient">Assurance auto taxi</h3>
+										</div>
+									</div>
+									<ul class="space-y-4">
+										<li class="flex items-start space-x-4">
+											<div class="p-1 bg-yellow-400  rounded-full mt-1">
+												<i class="fas fa-check text-success text-sm"></i>
+											</div>
+											<span class="text-gray-700">Bris de glace responsable ou non responsable.</span>
+										</li>
+										<li class="flex items-start space-x-4">
+											<div class="p-1 bg-yellow-400  rounded-full mt-1">
+												<i class="fas fa-check text-success text-sm"></i>
+											</div>
+											<span class="text-gray-700">Vol et incendie responsable ou non
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                            responsable.</span>
+										</li>
+										<li class="flex items-start space-x-4">
+											<div class="p-1 bg-yellow-400  rounded-full mt-1">
+												<i class="fas fa-check text-success text-sm"></i>
+											</div>
+											<span class="text-gray-700">Dommage tout accident responsable ou non
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                            responsable.</span>
+										</li>
+										<li class="flex items-start space-x-4">
+											<div class="p-1 bg-yellow-400  rounded-full mt-1">
+												<i class="fas fa-check text-success text-sm"></i>
+											</div>
+											<span class="text-gray-700">Assistance, dépannage ou remorquage selon la
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                            franchise souscrite.</span>
+										</li>
+									</ul>
+								</div>
+
+								<div class="bg-surface rounded-3xl p-8 shadow-xl border border-secondary/10">
+									<div class="mb-8">
+										<div class="flex items-center space-x-4 mb-4">
+											<div class="p-3 bg-secondary/10 rounded-2xl">
+												<i class="fas fa-shield-alt text-2xl text-gradient"></i>
+											</div>
+											<h3 class="text-2xl font-bold text-gradient">RC PRO taxi</h3>
+										</div>
+									</div>
+									<ul class="space-y-4">
+										<li class="flex items-start space-x-4">
+											<div class="p-1 bg-yellow-400  rounded-full mt-1">
+												<i class="fas fa-check text-success text-sm"></i>
+											</div>
+											<span class="text-gray-700">Extérieur du véhicule utilisé pour l'exercice de
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                            l'activité par exemple au cas où la valise d'un client est détériorée à
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                            l'occasion de son déchargement.</span>
+										</li>
+										<li class="flex items-start space-x-4">
+											<div class="p-1 bg-yellow-400  rounded-full mt-1">
+												<i class="fas fa-check text-success text-sm"></i>
+											</div>
+											<span class="text-gray-700">Une perte d'exploitation en cas d'immobilisation du
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                            véhicule donc une incapacité à exercer son activité.</span>
+										</li>
+										<li class="flex items-start space-x-4">
+											<div class="p-1 bg-yellow-400  rounded-full mt-1">
+												<i class="fas fa-check text-success text-sm"></i>
+											</div>
+											<span class="text-gray-700">La réparation du préjudice matériel dans un contexte
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                            pénal, à savoir en cas de vol ou d'agression, et on peut alors envisager le
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                            remboursement de la recette soustraite.</span>
+										</li>
+										<li class="flex items-start space-x-4">
+											<div class="p-1 bg-yellow-400  rounded-full mt-1">
+												<i class="fas fa-check text-success text-sm"></i>
+											</div>
+											<span class="text-gray-700">Le remboursement d'un stage de récupération de
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                            points.</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- CTA Section -->
+						<div class="bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-3xl p-12 text-dark text-center relative overflow-hidden">
+							<div class="absolute inset-0 bg-scanlines opacity-10"></div>
+							<div class="relative">
+								<div class="w-16 h-16 bg-dark/20 rounded-2xl mx-auto mb-6 flex items-center justify-center">
+									<i class="fas fa-calculator text-3xl text-dark"></i>
+								</div>
+								<h2 class="text-4xl font-bold mb-6 text-dark">Devis assurances taxi</h2>
+								<p class="text-xl mb-8 text-dark/90 max-w-3xl mx-auto leading-relaxed">
+									Pour obtenir un devis d'assurance taxi, il vous suffit de compléter le formulaire en
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                haut de
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                page, c'est simple et rapide. Cela vous permettra d'effectuer en ligne un comparatif de
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                différentes compagnies d'assurance proposant des garanties sur mesure pour les
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                chauffeurs
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											                                taxi.
 								</p>
+								<a href="#contactForm" class="inline-block bg-dark text-yellow-400 font-bold py-4 px-10 rounded-2xl hover:bg-primary transition-all transform hover:scale-105 shadow-2xl">
+									<i class="fas fa-arrow-up mr-2"></i>
+									Obtenir mon devis maintenant
+								</a>
 							</div>
-							<div>
-								<h3 class="text-xl font-bold mb-4">Liens utiles</h3>
-								<ul class="space-y-2">
-									<li>
-										<a href="https://assurance-flotte-entreprise.fr/mention-legale" class="text-dark-400 hover:text-white transition-colors">
-											Mentions légales
-										</a>
-									</li>
-									<li>
-										<a href="https://assurance-flotte-entreprise.fr/politique-legale" class="text-dark-400 hover:text-white transition-colors">
-											Politique de confidentialité
-										</a>
-									</li>
-								</ul>
-							</div>
-							<div>
-								<h3 class="text-xl font-bold mb-4">Contact</h3>
-								<ul class="space-y-2 text-dark-400">
-									<li>10 rue de Penthièvre</li>
-									<li>75008 Paris</li>
-									<li>01.82.83.48.00</li>
-									<li>contact@aksam-assurances.fr</li>
-								</ul>
-							</div>
-						</div>
-						<div class="border-t border-dark-800 mt-8 pt-8 text-center text-dark-400">
-							<p>© 2018 Aksam Assurance. Tous droits réservés.</p>
 						</div>
 					</div>
-				</footer>
+				</div>
+			</div>
+		</section>
 
-				<!-- Scripts -->
 
-				<script>
-					function showDiv(select) {
+		<!-- Scripts -->
+
+		<script>
+			function showDiv(select) {
 if (select.value == 'oui') {
 document.getElementById('hidden_div').style.display = "block";
 } else {
@@ -803,7 +712,8 @@ button.innerHTML = '<i class="fas fa-check mr-2"></i>Devis envoyé avec succès 
 button.className = button.className.replace('from-yellow-400 to-yellow-500', 'from-green-400 to-green-500');
 
 setTimeout(() => { // Redirection ou reset du formulaire
-window.location.reload(); // ou window.location.href = '/success'
+
+window.location.href = '/reponse'; // ou window.location.reload(); = 'rederction vers meme page'
 }, 2000);
 } else {
 throw new Error('Erreur de soumission');
@@ -819,10 +729,10 @@ button.disabled = false;
 }, 3000);
 });
 });
-				</script>
-				<!-- Cookie Scripts -->
-				<script>
-					document.addEventListener('DOMContentLoaded', function (event) {
+		</script>
+		<!-- Cookie Scripts -->
+		<script>
+			document.addEventListener('DOMContentLoaded', function (event) {
 if (document.cookie.indexOf('aksamPerformance') < 0) { // Modern cookie banner
 const banner = document.createElement('div');
 banner.innerHTML = `
@@ -856,32 +766,32 @@ expiryDate.setMonth(expiryDate.getMonth() + 1);
 document.cookie = 'aksamPerformance=1; path=/; expires=' + expiryDate.toGMTString();
 document.querySelector('.fixed.bottom-6').remove();
 }
-				</script>
+		</script>
 
-				<!-- JSON-LD -->
-				<script type="application/ld+json">
-					{
-																																																																																																																																																																																																																																																																																																																																				        "@context": "http://schema.org",
-																																																																																																																																																																																																																																																																																																																																				        "@type": "LocalBusiness",
-																																																																																																																																																																																																																																																																																																																																				        "name": "Aksam Assurance",
-																																																																																																																																																																																																																																																																																																																																				        "image": "assets/img/favicon.png",
-																																																																																																																																																																																																																																																																																																																																				        "telephone": "01 82 83 48 00",
-																																																																																																																																																																																																																																																																																																																																				        "address": {
-																																																																																																																																																																																																																																																																																																																																				            "@type": "PostalAddress",
-																																																																																																																																																																																																																																																																																																																																				            "streetAddress": "10 rue de Penthièvre",
-																																																																																																																																																																																																																																																																																																																																				            "addressCountry": "FR",
-																																																																																																																																																																																																																																																																																																																																				            "addressLocality": "PARIS",
-																																																																																																																																																																																																																																																																																																																																				            "postalCode": "75008"
-																																																																																																																																																																																																																																																																																																																																				        },
-																																																																																																																																																																																																																																																																																																																																				        "url": "https://www.assurance-pour-taxi.fr",
-																																																																																																																																																																																																																																																																																																																																				        "priceRange": "€€",
-																																																																																																																																																																																																																																																																																																																																				        "openingHours": "Mo-Fr 09:00-18:00",
-																																																																																																																																																																																																																																																																																																																																				        "contactPoint": {
-																																																																																																																																																																																																																																																																																																																																				            "@type": "ContactPoint",
-																																																																																																																																																																																																																																																																																																																																				            "telephone": "+33 1 82 83 48 00",
-																																																																																																																																																																																																																																																																																																																																				            "contactType": "Customer Service",
-																																																																																																																																																																																																																																																																																																																																				            "availableLanguage": ["French", "English"]
-																																																																																																																																																																																																																																																																																																																																				        }
-																																																																																																																																																																																																																																																																																																																																				    }
-				</script>
-			{% endblock %}
+		<!-- JSON-LD -->
+		<script type="application/ld+json">
+			{
+																																																																																																																																																																																																																																																																																																																																																																	        "@context": "http://schema.org",
+																																																																																																																																																																																																																																																																																																																																																																	        "@type": "LocalBusiness",
+																																																																																																																																																																																																																																																																																																																																																																	        "name": "Aksam Assurance",
+																																																																																																																																																																																																																																																																																																																																																																	        "image": "assets/img/favicon.png",
+																																																																																																																																																																																																																																																																																																																																																																	        "telephone": "01 82 83 48 00",
+																																																																																																																																																																																																																																																																																																																																																																	        "address": {
+																																																																																																																																																																																																																																																																																																																																																																	            "@type": "PostalAddress",
+																																																																																																																																																																																																																																																																																																																																																																	            "streetAddress": "10 rue de Penthièvre",
+																																																																																																																																																																																																																																																																																																																																																																	            "addressCountry": "FR",
+																																																																																																																																																																																																																																																																																																																																																																	            "addressLocality": "PARIS",
+																																																																																																																																																																																																																																																																																																																																																																	            "postalCode": "75008"
+																																																																																																																																																																																																																																																																																																																																																																	        },
+																																																																																																																																																																																																																																																																																																																																																																	        "url": "https://www.assurance-pour-taxi.fr",
+																																																																																																																																																																																																																																																																																																																																																																	        "priceRange": "€€",
+																																																																																																																																																																																																																																																																																																																																																																	        "openingHours": "Mo-Fr 09:00-18:00",
+																																																																																																																																																																																																																																																																																																																																																																	        "contactPoint": {
+																																																																																																																																																																																																																																																																																																																																																																	            "@type": "ContactPoint",
+																																																																																																																																																																																																																																																																																																																																																																	            "telephone": "+33 1 82 83 48 00",
+																																																																																																																																																																																																																																																																																																																																																																	            "contactType": "Customer Service",
+																																																																																																																																																																																																																																																																																																																																																																	            "availableLanguage": ["French", "English"]
+																																																																																																																																																																																																																																																																																																																																																																	        }
+																																																																																																																																																																																																																																																																																																																																																																	    }
+		</script>
+	{% endblock %}
